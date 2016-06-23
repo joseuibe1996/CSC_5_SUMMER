@@ -30,6 +30,8 @@ int main(int argc, char** argv)
     //Process data
     
     //Output Process data
+    
+    //This assignment is self explanatory  . 
     cout << "************************************************************";
     cout << endl << endl;
     cout << setw(50) << "     c c c               s s s           !! " << endl;
