@@ -8,7 +8,6 @@
 //System Libraries
 #include <cstdlib> 
 #include <iostream>
-
 using namespace std; //namespace of the system libraries
 
 //User libraries. We don't have these yet

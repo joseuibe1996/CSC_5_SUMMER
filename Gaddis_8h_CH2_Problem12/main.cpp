@@ -1,7 +1,7 @@
 /* 
  * File:   main.cpp
  * Author: Jose Uribe
- * Created on June 20, 2016
+ * Created on June 22, 2016
  * Purpose: Land Conversion problem
  */ 
 
@@ -35,7 +35,7 @@ int main(int argc, char** argv)
     nSqMi = nAcres*CNVFTACR*CNVMIFT*CNVMIFT;
     
     //Output Process data
-    cout << "The number of acres is = " << nSqMi << " Miles squared." << endl;
+    cout << nAcres << " acres is = " << nSqMi << " Miles squared." << endl;
     
     //Exit stage right!
     
