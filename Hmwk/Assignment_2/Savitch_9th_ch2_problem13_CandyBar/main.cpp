@@ -37,17 +37,17 @@ int main(int argc, char** argv)
     cin >> lbs >> inches >> yrs;
     
     //Process data
-    if(mf == 'm' || mf == 'f' ){
-        BMR = 66+6.3 * lbs + 12.9 *inches+6.8*yrs;
+    if(mf == 'm' || mf == 'M' ){
+        BMR = 66 + 6.3 * lbs + 12.9 * inches - 6.8 * yrs;
     }else{
-        BMR = 655 + 4.3 * lbs + 4.7 * inches + 4.7 * yrs;
+        BMR = 655 + 4.3 * lbs + 4.7 * inches - 4.7 * yrs;
     }
     nBArs = BMR / chocBars + 1;
     
     //version 2 
     // BMR=(mf == 'm' || mf == 'f' )?
-        //BMR = 66+6.3 * lbs + 12.9 *inches+6.8*yrs: //male
-        //BMR = 655 + 4.3 * lbs + 4.7 * inches + 4.7 * yrs; //female 
+        //BMR = 66 + 6.3 * lbs + 12.9 * inches - 6.8 * yrs: //male
+        //BMR = 655 + 4.3 * lbs + 4.7 * inches - 4.7 * yrs; //female 
     //nBArs = BMR / chocBars + 1;
     
     
