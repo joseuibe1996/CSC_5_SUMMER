@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Jose Uribe
  * Created on June 27, 2016
- * Purpose:  Celsius to C
+ * Purpose:  F to Celcius
  */ 
 
 //System Libraries
