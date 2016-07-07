@@ -43,91 +43,45 @@ int main(int argc, char** argv)
     cout << endl;
     cin >> intensity;
     
-    //Process data
+    //Process input data
+    if(mf == 'm' || mf == 'M' ){
+        BMR_Temp = 66 + 6.3 * lbs + 12.9 * inches - 6.8 * yrs;
+    }else{
+        BMR_Temp= 655 + 4.3 * lbs + 4.7 * inches - 4.7 * yrs;
+    }
+    BMR = BMR_Temp; // holds the initial BMR  
+    
     switch (intensity){ // switch helps determine exercise intensity
         case '1': 
-            //Process input data
-            if(mf == 'm' || mf == 'M' ){
-                BMR_Temp = 66 + 6.3 * lbs + 12.9 * inches - 6.8 * yrs;
-            }else{
-                BMR_Temp= 655 + 4.3 * lbs + 4.7 * inches - 4.7 * yrs;
-            }
-            
             //Process data
-            BMR = BMR_Temp; // holds the initial BMR 
             BMR_Temp *= .2; // BMR_Temp finds the amount to add to initial BMR
             BMR += BMR_Temp; // adds the amount of BMR_temp to initial BMR
-                    
-            nBArs = BMR / chocBars + 1; // # choco bars u can eat 
-            
-             //Output Process data
-            cout << "Eat less than " << nBArs<<" chocolate bars to loose "
-                    "weight "<<endl;
             break;
         case '2': 
-            //Process input data
-            if(mf == 'm' || mf == 'M' ){
-                BMR_Temp = 66 + 6.3 * lbs + 12.9 * inches - 6.8 * yrs;
-            }else{
-                BMR_Temp= 655 + 4.3 * lbs + 4.7 * inches - 4.7 * yrs;
-            }
-            
             //Process data
-            BMR = BMR_Temp; // holds the initial BMR 
             BMR_Temp *= .3; // BMR_Temp finds the amount to add to initial BMR
             BMR += BMR_Temp; // adds the amount of BMR_temp to initial BMR
-                    
-            nBArs = BMR / chocBars + 1; // # choco bars u can eat 
-            
-             //Output Process data
-            cout << "Eat less than " << nBArs<<" chocolate bars to loose "
-                    "weight "<<endl;
             break;
         case '3': 
-            //Process input data
-            if(mf == 'm' || mf == 'M' ){
-                BMR_Temp = 66 + 6.3 * lbs + 12.9 * inches - 6.8 * yrs;
-            }else{
-                BMR_Temp= 655 + 4.3 * lbs + 4.7 * inches - 4.7 * yrs;
-            }
-            
             //Process data
-            BMR = BMR_Temp; // holds the initial BMR 
             BMR_Temp *= .4; // BMR_Temp finds the amount to add to initial BMR
             BMR += BMR_Temp; // adds the amount of BMR_temp to initial BMR
-                    
-            nBArs = BMR / chocBars + 1; // # choco bars u can eat 
-            
-             //Output Process data
-            cout << "Eat less than " << nBArs<<" chocolate bars to loose "
-                    "weight "<<endl;
             break;
         case '4': 
-            //Process input data
-            if(mf == 'm' || mf == 'M' ){
-                BMR_Temp = 66 + 6.3 * lbs + 12.9 * inches - 6.8 * yrs;
-            }else{
-                BMR_Temp = 655 + 4.3 * lbs + 4.7 * inches - 4.7 * yrs;
-            }
-            
-            //Process data
-            BMR = BMR_Temp; // holds the initial BMR 
             BMR_Temp *= .5; // BMR_Temp finds the amount to add to initial BMR
             BMR += BMR_Temp; // adds the amount of BMR_temp to initial BMR
-                    
-            nBArs = BMR / chocBars + 1; // # choco bars u can eat 
-            
-             //Output Process data
-            cout << "Eat less than " << nBArs<<" chocolate bars to loose "
-                    "weight "<<endl;
             break;
-            
         default:
             cout << endl;
-            cout << "OOps.. You didn't enter a # try again.... " << endl;
-            cout << "Run the program again" << endl;
-            
+            cout << "OOps.. You didn't enter a # run the program again" << endl;
+            return 1; // ends program 
     }
+    
+    nBArs = BMR / chocBars + 1; // # choco bars u can eat 
+            
+    //Output Process data
+    cout << "Eat less than " << nBArs << " chocolate bars to loose "
+            "weight " << endl;
     
     //version 2 
     // BMR=(mf == 'm' || mf == 'f' )?
