@@ -6,8 +6,10 @@
  */ 
 
 //System Libraries
-#include <cstdlib> 
-#include <iostream>
+#include <cstdlib>   //input / output
+#include <iostream>  //Input/Output Library
+#include <cmath>     //Math Library
+#include <iomanip>   //Format Library
 
 using namespace std; //namespace of the system libraries
 

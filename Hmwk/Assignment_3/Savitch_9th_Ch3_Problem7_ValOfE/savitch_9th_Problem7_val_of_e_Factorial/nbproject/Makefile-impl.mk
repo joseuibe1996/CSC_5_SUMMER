@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Template
+PROJECTNAME=savitch_9th_Problem7_val_of_e_Factorial
 
 # Active Configuration
 DEFAULTCONF=Debug

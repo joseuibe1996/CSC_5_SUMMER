@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Template
+PROJECTNAME=Savitch_9th_Ch3_Problem8_PI_InfiniteSeries
 
 # Active Configuration
 DEFAULTCONF=Debug
