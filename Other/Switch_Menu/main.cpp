@@ -1,7 +1,7 @@
 /* 
  * File:   main.cpp
  * Author: Jose Uribe
- * Created on July 11, 2016
+ * Created on July 0, 2016
  * Purpose:  
  */ 
 
@@ -10,7 +10,6 @@
 #include <iostream>  //Input/Output Library
 #include <cmath>     //Math Library
 #include <iomanip>   //Format Library
-#include <fstream> 
 
 using namespace std; //namespace of the system libraries
 
@@ -26,7 +25,7 @@ using namespace std; //namespace of the system libraries
 int main(int argc, char** argv) 
 {
     //Declare Variable
-
+    
     //Input data
     
     //Process data

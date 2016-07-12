@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Template
+PROJECTNAME=Savitch_9th_ch5_Problem7_DayoftheWeek
 
 # Active Configuration
 DEFAULTCONF=Debug
