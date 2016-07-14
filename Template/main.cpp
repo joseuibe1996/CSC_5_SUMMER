@@ -11,6 +11,7 @@
 #include <cmath>     //Math Library
 #include <iomanip>   //Format Library
 #include <fstream> 
+#include <string>
 
 using namespace std; //namespace of the system libraries
 
@@ -23,10 +24,9 @@ using namespace std; //namespace of the system libraries
 //Execution 
 
 
-int main(int argc, char** argv) 
-{
+int main(int argc, char** argv){
     //Declare Variable
-
+    
     //Input data
     
     //Process data
@@ -37,4 +37,3 @@ int main(int argc, char** argv)
     
     return 0;
 }
-
